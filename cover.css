@@ -1,0 +1,349 @@
+
+header{
+  height: 60px;
+  background-color: #262948;
+  display: flex;
+  padding: 0 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1 !important;
+  padding: 0 80px ;
+  text-align: center;
+}
+
+.menu-toggle{
+  margin-left: auto;
+  color: white;
+  line-height: 68px;
+  cursor: pointer;
+  display: none;
+}
+.logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 68px;
+  text-transform: uppercase;
+}
+#menu{
+  margin-left: auto;
+}
+#menu ul li{
+  display: inline-block;
+}
+
+#menu ul li a{
+  display: inline-block;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  line-height: 60px;
+  padding: 0 8px;
+  text-transform: uppercase;
+  transition: all .25;
+}
+
+#menu ul li a:hover{
+  background: #00000c;
+}
+.show{
+  height: 305px !important ;
+}
+@media(max-width:700px) {
+  .menu-toggle{
+    display: block;
+  }
+  #menu{
+    background-color:#00000c;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 0;
+ 
+    overflow: hidden;
+    transition: .3 ease-out;
+  }
+  #menu ul li{
+    display: block;
+    text-align: center;
+  }
+  #menu ul li a{
+    color: white;
+    font-size: 20px;
+    border-bottom: 1px solid #58588f;
+    width: 100%;
+  }
+  #menu ul li a:hover{
+    background-color: #5959b8;
+  }
+  
+}
+.padre{
+  margin-top: 300px;
+  text-align: center;
+  font-size: 25px;
+  
+}
+ 
+p {
+  margin-bottom: 20px;
+}
+
+ 
+  
+/**** css tarjetas***************/
+ 
+div.cards {
+  margin: 80px auto;
+  max-width: 1050px;
+  text-align: center;
+  
+}
+
+div.card {
+  display: inline-block;
+  margin: 8px;
+  max-width: 31%;
+  margin-left: 10px;
+  text-align: left;
+  width: 33%;
+  z-index: 0;
+}
+.contenedor{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.contenedor figure{
+  position: relative;
+  height: 250px;
+  width: 350px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0px 12px 25px rgba(0,0,0,0.50);
+  cursor: pointer;
+}
+.contenedor figure img{
+  width:100%;  
+  height: 100%;
+  transition: all 500ms ease-in-out;
+}
+
+.contenedor figure .capa{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(11,103,123,0.6);
+  transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+  text-align: center;
+}
+.contenedor figure:hover > .capa{
+  visibility: visible;
+  opacity: 1;
+}
+
+.animacioncard{
+  opacity: 0;
+  transition: all 0,5s;
+}
+
+.mostrarArriba{
+  animation:mostrararriba 2s;
+
+}
+
+@keyframes mostrararriba{
+ 0%{
+   transform:translateY(-60px)
+ }
+ 100%{
+   transform: translateY(0);
+ }
+}
+
+html{
+  scroll-behavior: smooth;
+}
+/**habilidade**/
+
+.habilidades-container{
+  margin: 80px auto;
+  max-width: 1050px;
+  text-align: center;
+}
+.habilidades-icon{
+  width: 20%;
+  border-radius: 1.5em;width:9em ;
+ 
+}
+
+.contenedor-habilidad{
+  display: inline-block;
+  margin: 8px;
+  max-width: 20%;
+  margin-left: 20px;
+  text-align: center;
+  width: 33%;
+  z-index: 0;
+  box-shadow: 0px 7px 7px -6px black;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+section{
+ display: flex;
+  margin-bottom: 5px;
+  padding: 0 40px;
+  align-items: center;
+}
+ 
+@media (max-width: 650px) { 
+  div.card {
+    display: inline;
+    max-width: 95%;
+    align-items: center;
+ 
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+ .contenedor{
+  max-width: 80%;
+   padding: 0 1rem;
+   margin: 1rem;
+ }
+ 
+}
+.contenedor-habilidad{
+  transition: transform .5s;
+}
+.contenedor-habilidad :hover{
+
+  transform: scale(1.2);
+}
+
+ 
+@media (max-width:585px){
+  .contenedor-habilidad{
+    max-width: 40%;
+    display: inline-block;
+    align-items: center;
+  }
+  .habilidades-icon{
+    width: 5em;
+    border-radius: 1.5em; 
+   
+  }
+  div .contenedor_contactame .image_contacto img{
+    margin-left: 80px !important;
+  }
+  .contenedor_contactame_img{
+    margin-left:0 !important ;
+  }
+}
+.acerca_me_container{
+  margin: 80px auto;
+  max-width: 1050px;
+   
+}
+.texto_me{
+  margin-left: 50px;
+}
+section a {
+  display: inline-block;
+  padding: 7px 0;
+  color: #262948;
+  width: 100px;
+  text-align: center;
+  border: 1px solid white;
+  border-radius: 50px;
+  text-decoration: none;
+  background: white;
+  flex-direction: column;
+}
+section img{
+  width: 50%;
+}
+ 
+.fortalezas ul li{
+  list-style: none;
+}
+@media (max-width: 880px) { 
+  div.card {
+    width: 100%;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+ 
+  .contenedor figure{
+    margin:0
+  }
+  .contenedor-habilidad{
+    max-width: 33%;
+  }
+  
+  div .contenedor_contactame{
+   flex-direction: column;
+   
+  }
+   div .contenedor_contactame .image_contacto img{
+     align-items: center ;
+    width: 50%;
+ 
+    margin-left: 200px;
+    margin-bottom: 40px;
+  }
+  .icon_contactame{
+    margin-top: 30px;
+    margin-left: 0 !important;
+    margin-bottom: 50px;
+  }
+
+}
+@media(max-width:1000px){
+  section{
+    flex-direction: column;
+  
+  }
+ 
+}
+
+.contenedor_contactame{
+  margin: 80px auto;
+    max-width: 1050px;
+    align-items: center;
+    display: flex;
+}
+
+.image_contacto img{
+  width: 100%;
+}
+
+.icon_contactame {
+  display: flex;
+  margin-left: 200px;
+  align-items: center;
+}
+
+.icon_contactame img{
+  width: 60%;
+  margin: 0 20px;
+}
+
+.contenedor_contactame_img{
+  box-shadow: 0px 7px 7px -6px black;
+ margin-left: 20px;
+}
+
+.contenedor_contactame_img img:hover{
+  cursor: pointer;
+}
