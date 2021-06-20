@@ -1,9 +1,15 @@
+@font-face {
+  font-family: 'Benne';
+  src: url('font/Benne-Regular.ttf') format('truetype');
+}
+body{
+  font-family: 'Benne', serif;
+}
 
 header{
   height: 60px;
   background-color: #262948;
   display: flex;
-  padding: 0 20px;
   position: fixed;
   left: 0;
   top: 0;
@@ -221,6 +227,10 @@ section{
    padding: 0 1rem;
    margin: 1rem;
  }
+ header{
+  padding: 0px 20px;
+}
+
  
 }
 .contenedor-habilidad{
